@@ -1,0 +1,26 @@
+[package]
+name = "hyper_101"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+http = "0.2.6"
+hyper = { version = "0.14.16", features = ["full"] }
+lazy_static = "1.4.0"
+local-ip-address = "0.4.4"
+pretty_env_logger = "0.4.0"
+rand = "0.8.5"
+regex = "1.5.5"
+rug = "1.15.0"
+tokio = { version = "1.15.0", features = ["full"] }
+url = "2.2.2"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
